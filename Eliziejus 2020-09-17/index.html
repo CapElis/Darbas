@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leaseweb</title>
+</head>
+<style>
+    .header {
+        display: flex;
+
+        background: grey;
+        height: 50px;
+    }
+
+
+
+    .wrapper1 > div{
+        background: lightseagreen;
+        padding: 1em;
+
+
+    }
+    .wrapper1
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 6.5fr 1fr ;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+    .box1
+    {
+      grid-column:1/2;
+        grid-row: 1;
+
+    }
+    .box2
+    {
+        grid-row: 2;
+        grid-column: 1/2;
+
+    }
+    .box3
+     {
+        grid-column: 2/4;
+        grid-row: 1/3;
+     }
+    .box4
+    {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .box5
+    {
+      grid-column: 4;
+        grid-row: 2;
+    }
+.wrapper2 >div{
+    background: lightcoral;
+    padding: 1em;
+
+
+}
+
+    .wrapper2
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+
+}
+    .line
+    {
+        margin-top: 1em;
+
+    }
+
+    .wrapper3 > div{
+        background: darkolivegreen;
+        padding: 1em;
+
+
+    }
+    .wrapper3
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+    .boxx1
+    {
+        grid-column: 1/2;
+        grid-row: 1
+
+    }
+    .boxx2
+    {
+       grid-column: 2/3;
+        grid-row: 1;
+    }
+    .boxx3
+    {
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+    .boxx4
+    {
+       grid-column: 4/5;
+        grid-row: 1/4;
+
+    }
+    .boxx5
+    {
+      grid-column: 5/6;
+        grid-row: 1;
+    }
+    .boxx6
+    {
+       grid-column: 6/7;
+        grid-row: 1;
+    }
+    .boxx7
+    {
+        grid-column: 7/8;
+        grid-row: 1;
+    }
+    .boxx8
+    {
+        grid-column:1/2 ;
+        grid-row: 2
+    }
+    .boxx9
+    {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+    .boxx10
+    {
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+    .boxx11
+    {
+        grid-column: 5/6;
+        grid-row: 2;
+    }
+    .boxx12
+    {
+        grid-column: 6/7;
+        grid-row: 2;
+    }
+    .boxx13
+    {
+        grid-column: 7/8;
+        grid-row: 2;
+    }
+    .boxx14
+    {
+        grid-column: 5/6;
+        grid-row: 3;
+    }
+    .boxx15
+    {
+        grid-column:1/2 ;
+        grid-row: 3
+    }
+    .boxx16
+    {
+        grid-column: 2/3;
+        grid-row: 3;
+    }
+    .boxx17
+    {
+        grid-column: 3/4;
+        grid-row: 3;
+    }
+    .boxx18
+    {
+        grid-column: 6/7;
+        grid-row: 3;
+    }
+    .boxx19
+    {
+        grid-column: 7/8;
+        grid-row: 3;
+    }
+
+    .wrapper4 >div{
+        background: lightblue;
+        padding: 1em;
+
+
+    }
+
+    .wrapper4
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+
+    }
+
+    .wrapper5  >div{
+        background: lightsalmon;
+        padding: 1em;
+
+
+    }
+
+    .wrapper5
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
+
+        grid-row-gap: 1em ;
+
+    }
+    .line
+    {
+        margin-top: 1em;
+
+    }
+    .bb1
+    {
+      grid-column: 1/2;
+        grid-row: 1
+    }
+    .bb2
+    {
+      grid-column: 2/3;
+        grid-row: 1;
+    }
+    .bb3
+    {
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+    .bb4
+    {
+        grid-column: 4/5;
+        grid-row: 1;
+    }
+    .bb5
+    {
+        grid-column: 5/6;
+        grid-row: 1;
+    }
+    .lline
+    {
+        margin-right:  1em;
+    }
+    .llline
+    {
+        margin-left: 1em;
+    }
+    .wrapper6 >div{
+        background: lightcoral;
+        padding: 1em;
+
+
+    }
+
+    .wrapper6
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+
+    }
+    .footer
+    {
+        margin-top: 1em;
+        display: flex;
+        background: grey;
+    }
+
+
+
+
+</style>
+<header>
+    <div class="header">
+        <h3> Hello world </h3>
+    </div>
+
+</header>
+<body>
+
+<div class="wrapper1">
+    <div class="box1 line"> <p>box1</p>  </div>
+    <div class="box2"> <p>box2</p>  </div>
+    <div class="box3 line"> <p>box3</p>  </div>
+    <div class="box4 line"> <p>box4</p>  </div>
+    <div class="box5"> <p>box5</p>  </div>
+
+</div>
+<div class="wrapper2">
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+</div>
+
+<div class="wrapper3">
+    <div class="line boxx1">1</div>
+    <div class="line boxx2">2</div>
+    <div class="line boxx3">3</div>
+    <div class="line boxx4">4</div>
+    <div class="line boxx5">5</div>
+    <div class="line boxx6">6</div>
+    <div class="line boxx7">7</div>
+    <div class="boxx8">8</div>
+    <div class="boxx9">9</div>
+    <div class="boxx10">10</div>
+    <div class="boxx11">11</div>
+    <div class="boxx12">12</div>
+    <div class="boxx13">13</div>
+    <div class="boxx14">14</div>
+    <div class="boxx15">15</div>
+    <div class="boxx16">16</div>
+    <div class="boxx17">17</div>
+    <div class="boxx18">18</div>
+    <div class="boxx19">19</div>
+
+
+</div>
+
+<div class="wrapper4">
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+    <div class="line">llllll</div>
+</div>
+<div class="wrapper5">
+    <div class="line bb1 lline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, repellendus!</div>
+    <div class="line bb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, repellendus!</div>
+    <div class="line bb3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, repellendus!</div>
+    <div class="line bb4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, repellendus!</div>
+    <div class="line bb5 llline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, repellendus!</div>
+
+</div>
+<div class="wrapper6">
+    <div class="line"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.  </div>
+    <div class="line"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.  </div>
+    <div class="line"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.  </div>
+    <div class="line"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.  </div>
+    <div class="line"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.  </div>
+    <div class="line"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.  </div>
+    <div class="line"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.  </div>
+    <div class="line"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.  </div>
+    <div class="line"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.  </div>
+
+
+
+</div>
+<footer class="footer">
+
+
+
+       <h3>Copyright</h3>
+
+
+
+
+</footer>
+
+</body>
+</html>
